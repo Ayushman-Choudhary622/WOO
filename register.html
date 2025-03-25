@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - World Organisation for Olympiads</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="js/form-handler.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="WOO Logo" />
+      <h1>World Organisation for Olympiads</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Section -->
+  <section class="register" style="background-image: url('images/backgrounds/register-bg.jpg');">
+    <h2>Register for WOO '25</h2>
+    <p>Fill in your details to participate in the Olympiads.</p>
+    <form action="https://formspree.io/f/mvgkqapp" method="POST" id="registration-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="age-group">Age Group:</label>
+      <select id="age-group" name="age-group" required>
+        <option value="3rd to 5th">Class 3rd to 5th</option>
+        <option value="6th to 8th">Class 6th to 8th</option>
+        <option value="9th to 12th">Class 9th to 12th</option>
+      </select>
+
+      <label for="olympiad">Choose Your Olympiad:</label>
+      <select id="olympiad" name="olympiad" required>
+        <option value="WMO">World Mathematics Olympiad (WMO)</option>
+        <option value="WSO">World Science Olympiad (WSO)</option>
+        <option value="WCO">World Chemistry Olympiad (WCO)</option>
+        <option value="WPO">World Physics Olympiad (WPO)</option>
+        <option value="WBO">World Biology Olympiad (WBO)</option>
+        <option value="WJSO">World Junior Science Olympiad (WJSO)</option>
+        <option value="WRO">World Reasoning Olympiad (WRO)</option>
+        <option value="WHO">World Hackathon Olympiad (WHO)</option>
+      </select>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 World Organisation for Olympiads. All Rights Reserved.</p>
+    <a href="contact.html">Contact Us</a>
+  </footer>
+</body>
+</html>

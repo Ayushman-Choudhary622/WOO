@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Organisation for Olympiads (WOO)</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="WOO Logo" />
+      <h1>World Organisation for Olympiads</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Olympiads</a>
+          <ul class="dropdown-content">
+            <li><a href="olympiads/wmo.html">Mathematics (WMO)</a></li>
+            <li><a href="olympiads/wso.html">Science (WSO)</a></li>
+            <li><a href="olympiads/wco.html">Chemistry (WCO)</a></li>
+            <li><a href="olympiads/wpo.html">Physics (WPO)</a></li>
+            <li><a href="olympiads/wbo.html">Biology (WBO)</a></li>
+            <li><a href="olympiads/wjso.html">Junior Science (WJSO)</a></li>
+            <li><a href="olympiads/wro.html">Reasoning (WRO)</a></li>
+            <li><a href="olympiads/who.html">Hackathon (WHO)</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('images/backgrounds/hero-bg.jpg');">
+    <h2>Welcome to WOO '25</h2>
+    <p>Participate in free Olympiads and expand your knowledge!</p>
+    <a href="register.html" class="cta-button">Register Now</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Participate in WOO?</h2>
+    <div class="feature">
+      <img src="images/icons/olympiads/math.png" alt="Math Olympiad" />
+      <h3>Challenge Yourself</h3>
+      <p>Compete in prestigious Olympiads and test your skills.</p>
+    </div>
+    <div class="feature">
+      <img src="images/icons/age-groups/high.png" alt="High School Group" />
+      <h3>Class Wise Results</h3>
+      <p>Results will be announced separately for different class groups.</p>
+    </div>
+    <div class="feature">
+      <img src="images/icons/olympiads/hackathon.png" alt="Hackathon" />
+      <h3>Innovate and Learn</h3>
+      <p>Join the Hackathon Olympiad and showcase your creativity.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 World Organisation for Olympiads. All Rights Reserved.</p>
+    <a href="contact.html">Contact Us</a>
+  </footer>
+
+  <!-- Chatbot Integration -->
+  <div id="chatbot-icon">💬</div>
+  <div id="chatbot-container" class="hidden">
+    <iframe src="chatbot.html" frameborder="0"></iframe>
+  </div>
+</body>
+</html>
